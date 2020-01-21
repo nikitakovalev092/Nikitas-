@@ -12,4 +12,4 @@ C:\Users\user\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFo
 C:\Users\user\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Haaaaaa.resources
 C:\Users\user\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
 C:\Users\user\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form4.resources
-C:\Users\user\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form5.resources
+C:\Users\user\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.MainForm.resources
