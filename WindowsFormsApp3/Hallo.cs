@@ -11,21 +11,26 @@ using System.Windows.Forms;
 namespace WindowsFormsApp3
 {
     public partial class MainForm : Form
-    {
-        public MainForm()
+    {        
+            public MainForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
+            Who f = new Who();
             f.ShowDialog();
-        }
+          }
 
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("ТЫ не АДМИН");
         }
+    
+    
+           
+                
+    
     }
 }
