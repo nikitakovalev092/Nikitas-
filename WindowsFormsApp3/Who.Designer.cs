@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp3
 {
-    partial class Form1
+    partial class Who
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -47,7 +47,7 @@
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Noto Sans Lisu", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Noto Sans Lisu", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(3, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(252, 99);
@@ -59,7 +59,7 @@
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Noto Serif Armenian", 7.8F);
+            this.button3.Font = new System.Drawing.Font("Noto Serif Armenian", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.button3.Location = new System.Drawing.Point(261, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(252, 99);
@@ -76,13 +76,14 @@
             // button4
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Font = new System.Drawing.Font("Noto Serif Armenian", 7.8F);
+            this.button4.Font = new System.Drawing.Font("Noto Serif Armenian", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.button4.Location = new System.Drawing.Point(519, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(254, 99);
             this.button4.TabIndex = 28;
             this.button4.Text = "Нагиев";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -111,7 +112,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp3.Properties.Resources._590;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(770, 439);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -127,7 +128,7 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "Назови мем";
             // 
-            // Form1
+            // Who
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -138,7 +139,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
+            this.Name = "Who";
             this.Text = " кто это";
             this.TransparencyKey = System.Drawing.Color.LightGray;
             this.Load += new System.EventHandler(this.Form1_Load);

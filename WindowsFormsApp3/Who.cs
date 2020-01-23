@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp3
 {
-    public partial class Form1 : Form
+    public partial class Who : Form
     {
-        public Form1()
+        int nomerVoprosa = 1;
+        public Who()
         {
             InitializeComponent();
         }
@@ -32,17 +33,59 @@ namespace WindowsFormsApp3
 
         }
 
+        void nextQuestion()
+        {
+            nomerVoprosa++;
+            if (nomerVoprosa == 1)
+            {
+                pictureBox1.Load("../../Kartinki/590.jpg");
+                button2.Text = "О май гад данила ты что крейзи";
+                button3.Text = "не панимаю ";
+                button4.Text = "Арбуз";
+            }
+            if (nomerVoprosa == 2)
+            {
+                pictureBox1.Load("../../Kartinki/kreizi.jpg");
+                button2.Text = "О май гад данила ты что крейзи";
+                button3.Text = "не панимаю ";
+                button4.Text = "Арбуз";
+            }
+            if (nomerVoprosa == 3)
+            {
+                pictureBox1.Load("../../Kartinki/Dad.jpg");
+                button2.Text = "бать те нармально";
+                button3.Text = "отдых на море ";
+                button4.Text = "рыбалка с дедом";
+
+            }
+
+            if (nomerVoprosa == 4)
+            {
+                pictureBox1.Load("../../Kartinki/CJ.jpg");
+                button2.Text = "ah shit here we go again";
+                button3.Text = "Вот деоьмо я снова здесь  ";
+                button4.Text = "КИСЕЛЬ";
+
+
+
+            }
+                    
+                    }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
-            KonForm f = new KonForm();
-            f.ShowDialog();
+            nextQuestion();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form3 f = new Form3();
-            f.ShowDialog();
+            nextQuestion();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            nextQuestion();
         }
     }
 }
