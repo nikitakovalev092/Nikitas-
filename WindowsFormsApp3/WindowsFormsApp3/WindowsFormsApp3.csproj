@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D7E88F5-51D6-4105-A14D-0569CFC8439E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp3</RootNamespace>
+    <AssemblyName>WindowsFormsApp3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Who.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Who.Designer.cs">
+      <DependentUpon>Who.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mem.Designer.cs">
+      <DependentUpon>mem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtpravkaPisma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtpravkaPisma.Designer.cs">
+      <DependentUpon>OtpravkaPisma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hallo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hallo.Designer.cs">
+      <DependentUpon>Hallo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gameover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>Gameover.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Who.resx">
+      <DependentUpon>Who.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mem.resx">
+      <DependentUpon>mem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gameover.resx">
+      <DependentUpon>Gameover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtpravkaPisma.resx">
+      <DependentUpon>OtpravkaPisma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hallo.resx">
+      <DependentUpon>Hallo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hqdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iPWJ8V5H4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\381f51a11ccb19d516ab7f99accd5d26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o-mai-gad-danila-ty-chto-kreizi-photo-normal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\590.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\265e11a4b1ef67fd19a09f4d55b30856.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ENNF1lwWwAMHk-Z.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
