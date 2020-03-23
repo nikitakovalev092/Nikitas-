@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>WindowsFormsApp3</RootNamespace>
     <AssemblyName>WindowsFormsApp3</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,6 +49,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Haaaaaa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Haaaaaa.Designer.cs">
+      <DependentUpon>Haaaaaa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KonForm.Designer.cs">
+      <DependentUpon>KonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Who.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,53 +91,28 @@
     <Compile Include="OtpravkaPisma.Designer.cs">
       <DependentUpon>OtpravkaPisma.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hallo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Hallo.Designer.cs">
-      <DependentUpon>Hallo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ribalka.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Haaaaaa.Designer.cs">
-      <DependentUpon>Ribalka.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KonForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KonForm.Designer.cs">
-      <DependentUpon>KonForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Gameover.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include=".Designer.cs">
-      <DependentUpon>Gameover.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Haaaaaa.resx">
+      <DependentUpon>Haaaaaa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonForm.resx">
+      <DependentUpon>KonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Who.resx">
       <DependentUpon>Who.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mem.resx">
       <DependentUpon>mem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gameover.resx">
-      <DependentUpon>Gameover.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="OtpravkaPisma.resx">
       <DependentUpon>OtpravkaPisma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Hallo.resx">
-      <DependentUpon>Hallo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Haaaaaa.resx">
-      <DependentUpon>Ribalka.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KonForm.resx">
-      <DependentUpon>KonForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
