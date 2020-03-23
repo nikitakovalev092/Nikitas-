@@ -65,8 +65,7 @@ namespace WindowsFormsApp3
                 button2.Text = "ah shit here we go again";
                 button3.Text = "Вот деоьмо я снова здесь  ";
                 button4.Text = "КИСЕЛЬ";
-
-
+                
 
             }
                     

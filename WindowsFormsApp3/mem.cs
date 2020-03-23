@@ -22,5 +22,15 @@ namespace WindowsFormsApp3
             Form4 f = new Form4();
             f.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
