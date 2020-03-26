@@ -50,7 +50,7 @@
             this.button2.Font = new System.Drawing.Font("Noto Sans Lisu", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(3, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(252, 99);
+            this.button2.Size = new System.Drawing.Size(250, 99);
             this.button2.TabIndex = 22;
             this.button2.Text = "ждун";
             this.button2.UseVisualStyleBackColor = true;
@@ -60,9 +60,9 @@
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Noto Serif Armenian", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button3.Location = new System.Drawing.Point(261, 3);
+            this.button3.Location = new System.Drawing.Point(259, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(252, 99);
+            this.button3.Size = new System.Drawing.Size(250, 99);
             this.button3.TabIndex = 23;
             this.button3.Text = "женя";
             this.button3.UseVisualStyleBackColor = true;
@@ -77,9 +77,9 @@
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Noto Serif Armenian", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button4.Location = new System.Drawing.Point(519, 3);
+            this.button4.Location = new System.Drawing.Point(515, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(254, 99);
+            this.button4.Size = new System.Drawing.Size(250, 99);
             this.button4.TabIndex = 28;
             this.button4.Text = "Нагиев";
             this.button4.UseVisualStyleBackColor = true;
@@ -99,7 +99,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(776, 105);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(768, 105);
             this.tableLayoutPanel1.TabIndex = 29;
             // 
             // panel1
@@ -132,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(776, 550);
+            this.ClientSize = new System.Drawing.Size(768, 550);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableLayoutPanel1);
