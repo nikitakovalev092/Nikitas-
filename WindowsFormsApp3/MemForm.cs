@@ -16,6 +16,7 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
             Text = mem.name;
+            
             label1.Text = mem.opisanie;
             pictureBox1.Image = mem.pic.Image;
         }
@@ -26,6 +27,11 @@ namespace WindowsFormsApp3
         }
 
         private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

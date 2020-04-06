@@ -27,5 +27,16 @@ namespace WindowsFormsApp3
         {
             MessageBox.Show("ТЫ не АДМИН");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Who f = new Who ();
+            f.ShowDialog();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
