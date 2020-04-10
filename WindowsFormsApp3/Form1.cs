@@ -28,30 +28,26 @@ namespace WindowsFormsApp3
 
     public partial class Form1 : Form
     {
-        Mem[] mems = new Mem[12];
+        List<Mem> mems = new List<Mem>();
         public Form1()
         {
             InitializeComponent();
 
-            mems[0] = new Mem("Ждун", "Ждун ждет", 2018);
-            mems[1] = new Mem("Данила ты что крейзи", "Даёшь малодёшь", 2012);
-            mems[2] = new Mem("CJ", "Я снова сдесь", 2004);
-            mems[3] = new Mem("Меня заминировали", "ХЗ что это", 1280);
-            mems[4] = new Mem("Выйди от сюда розбийник", "Политика", 2019);
-            mems[5] = new Mem("Мы не знаем что это такое", "Телевидиние", 2008);
-            mems[6] = new Mem("Славик Буйный", "Россиянин", 2003);
-            mems[7] = new Mem("Бандит", "Россиянин", 2006);
-            mems[8] = new Mem("Санис", "Соник", 1998);
-            mems[9] = new Mem("Человек павук", "Мульты", 1999);
-            mems[10] = new Mem("Майг вазовский", "Мульты", 2001);
-            mems[11] = new Mem("Шкек", "Мульты", 2003);
-
+            string[] lines = System.IO.File.ReadAllLines("Мем.txt");
+            foreach (string str in lines)
+            {
+                string[] parts = str.Split(new string[] { ", " }, StringSplitOptions.None);
+                Mem mem = new Mem(parts[0], parts[1], Convert.ToInt32(parts[2]));
+                mems.Add(mem);
+            }
+            
+            
 
 
 
             int x = 0;
             int y = 100;
-            for (int i = 0; i < mems.Length; i = i + 1)
+            for (int i = 0; i < mems.Count; i = i + 1)
             {
                 try
                 {
@@ -80,7 +76,7 @@ namespace WindowsFormsApp3
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < mems.Length; i = i + 1)
+            for (int i = 0; i < mems.Count; i = i + 1)
             {
                 if (sender == mems[i].pic)
                 {
@@ -92,7 +88,7 @@ namespace WindowsFormsApp3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < mems.Length; i = i + 1)
+            for (int i = 0; i < mems.Count; i = i + 1)
             {
                 mems[i].pic.Visible = true;
 
