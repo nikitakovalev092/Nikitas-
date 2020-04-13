@@ -49,10 +49,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(0, 259);
+            this.button1.Location = new System.Drawing.Point(0, 209);
             this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(269, 124);
+            this.button1.Size = new System.Drawing.Size(269, 174);
             this.button1.TabIndex = 1;
             this.button1.Text = "Начать игру";
             this.button1.UseVisualStyleBackColor = true;
@@ -82,9 +82,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(0, 12);
+            this.button3.Location = new System.Drawing.Point(0, 0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(269, 252);
+            this.button3.Size = new System.Drawing.Size(269, 212);
             this.button3.TabIndex = 6;
             this.button3.Text = "Тест";
             this.button3.UseVisualStyleBackColor = true;
