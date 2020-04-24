@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace WindowsFormsApp3
 {
     public struct Mem
@@ -16,13 +16,15 @@ namespace WindowsFormsApp3
         public string opisanie;
         public PictureBox pic;
         public int god;
-
-        public Mem(string name1, string opisanie1, int god1)
+        public string kniga;
+        
+        public Mem(string name1, string opisanie1, int god1 , string kniga1)
         {
             name = name1;
             opisanie = opisanie1;
             pic = new PictureBox();
             god = god1;
+            kniga = kniga1;
         }
     }
 
@@ -37,7 +39,7 @@ namespace WindowsFormsApp3
             foreach (string str in lines)
             {
                 string[] parts = str.Split(new string[] { ", " }, StringSplitOptions.None);
-                Mem mem = new Mem(parts[0], parts[1], Convert.ToInt32(parts[2]));
+                Mem mem = new Mem(parts[0], parts[1], Convert.ToInt32(parts[2]) ,parts[3]);
                 mems.Add(mem);
             }
             
@@ -49,7 +51,11 @@ namespace WindowsFormsApp3
             int y = 100;
             for (int i = 0; i < mems.Count; i = i + 1)
             {
-                try
+                
+                
+                
+                
+try
                 {
                     mems[i].pic.Load("../../Kartinki/" + mems[i].name + ".jpg");
                     mems[i].pic.Location = new Point(x, y);
@@ -135,5 +141,14 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Internet f = new Internet();
+            f.ShowDialog();
+        }
+
+       
+        
     }
 }

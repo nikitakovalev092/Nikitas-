@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,16 +12,24 @@ using System.Windows.Forms;
 namespace WindowsFormsApp3
 {
     public partial class MemForm : Form
-    {
-        public MemForm(Mem mem)
+    {    Mem mem;
+       
+        
+        public MemForm(Mem mem1)
         {
+             mem = mem1;
+            
             InitializeComponent();
             Text = mem.name;
             
             label1.Text = mem.opisanie;
             pictureBox1.Image = mem.pic.Image;
         }
-
+       
+        
+        
+       
+        
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -35,5 +44,18 @@ namespace WindowsFormsApp3
         {
 
         }
+
+       
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            WebClient wc = new WebClient();
+            wc.DownloadFile(mem.kniga,
+                "C:\\Users\\" + Environment.UserName + "\\Downloads\\" + mem.name + ".pdf");
+            MessageBox.Show("Сохранено в " + mem.name + ".pdf");
+
+        }
     }
+
+
 }
