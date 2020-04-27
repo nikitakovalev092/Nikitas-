@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using System.Net.Mail ;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -145,6 +146,12 @@ try
         private void button3_Click(object sender, EventArgs e)
         {
             Internet f = new Internet();
+            f.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form4 f = new Form4();
             f.ShowDialog();
         }
 
